@@ -2,13 +2,18 @@
   padding: 0;
   margin: 0;
 }
+body{
+  overflow-x: hidden;
+}
 header{
-  border: 1px solid black;
-  height: 100px;
+  height: auto;
   width: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.img-div{
+  height: 60px;
 }
 nav{
   justify-content: space-between;
@@ -53,7 +58,7 @@ button{
   /* padding: 0px 25px; */
   /* font-weight: 500;
   font-size: 1rem; */
-  padding:  20px;
+  padding: 20px;
   margin-left: 25px;
   list-style: none;
   border-radius: 50px;
@@ -85,9 +90,25 @@ li>input{
   color: rgb(98, 184, 98);
   text-decoration-line: none;
 }
-/* #home{
-  padding-right: 10px;
-} */
+.hamburgur{
+  font-size: 35px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid;
+  font-weight: bold;
+  background-color: rgb(196, 249, 195);
+  transition: 0.3s cubic-bezier(0.25, 1.5, 0.5, 1);
+}
+ .hamburgur:hover{
+  background-color: rgb(98, 184, 98);
+  color: white;
+  border: 2px solid black;
+  transform: scale(1.1);
+}
  .b1{
   font-size: 20px;
   text-align: center;
@@ -146,7 +167,7 @@ li>input{
   justify-content: flex-end;
   margin-right: 20px;
 }
-#carouselExampleDark{
+#carouselDesktop{
   margin: 40px;
 }
 .imgchange{
@@ -220,20 +241,21 @@ img {
   height: 100%;
   width: 100%;
 }
-.heading{
-  margin: 20px auto;
+.container-3-heading{
+  margin: 0px auto;
   align-items: center;
 }
-.heading h1{
+.container-3-heading h1{
   margin-top: 100px;
-  margin-left: 50px;
+  margin-left: 30px;
   font-weight: bold;
+  font-size: 45px;
 }
-.heading img{
+.container-3-heading img{
   width: 150px;
   height: 150px;
   position: relative;
-  top: 80px;
+  top: 90px;
   right: 60px;
 }
 .box1 img{
@@ -245,19 +267,144 @@ img {
 .box6 img{
   background-color: #FEE79C;
 }
- @media  (max-width: 768px){
-  .container-right{
+footer {
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #C8D400;
+  margin: 40px;
+  padding: 20px;
+}
+
+/* ----- TOP AREA ----- */
+.footer-contant-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-img-div {
+  margin: 25px;
+  height: 60px;
+}
+
+.footer-contant-1-text {
+  margin: 25px;
+  text-align: center;
+}
+
+.footer-contant-1-text h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.footer-icons i {
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #B8C301;
+  padding: 10px 30px 10px 10px;
+  margin: 5px;
+  font-size: 25px;
+  display: inline-block;
+}
+
+/* ----- MIDDLE AREA ----- */
+.footer-contant-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-contant-colums {
+  display: flex;
+  gap: 100px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.footer-col ul li {
+  margin: 3px 0;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.contant2-para {
+  width: 30%;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* ----- BOTTOM AREA ----- */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid black;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+ @media  (max-width: 1115px){
+.container-right{
   text-align: center;
   align-items: center;
   height: 100%;
   width: 100%;
   margin: auto 30px;
 }
+.secondcarousal{
+  display: flex;
+}
+.b1{
+  display: none;
+}
+.b2{
+  display: none;
+}
+.hamburgur{
+  margin: 5px;
+  display: flex;
+}
+header ul{
+  padding: 0;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2x solid black
+}
+.img-div{
+  margin: 5px;
+  height: 40px;
+}
 .container-right ul{
   justify-content: center;
 }
 .heading h1{
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
 }
 .heading img{
@@ -266,5 +413,48 @@ img {
   position: relative;
   top: 55px;
   right: 10px;
+}
+.card-heading{
+  margin: 0;
+  padding: 0;
+}
+.card-heading  input{
+  margin: 15px 10px 0 0;
+  padding: 5px;
+  font-size: 15px;
+}
+.card-heading p{
+  padding: 0;
+  margin: 25px 0 0 35px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.container2{
+  align-items: center;
+  width: 100%;
+  margin: 50px 30px 0 0;
+}
+.container-right{
+  margin: 0;
+}
+.container-3-heading{
+  display: flex;
+  justify-content: center;
+  align-items:end ;
+  margin: 0px;
+  padding: 0px;
+}
+.container-3-heading h1{
+  margin: 0;
+  padding: 10px;
+  font-size: 5vw;
+  font-weight: bold;
+  text-wrap: nowrap;
+}
+.container-3-heading img{
+  margin: 0px 0px 0px 85px;
+  padding: 0;
+  position: relative;
+  top: 47px;
 }
 }
