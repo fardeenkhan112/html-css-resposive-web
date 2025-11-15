@@ -268,6 +268,7 @@ img {
   background-color: #FEE79C;
 }
 footer {
+  margin: 0 auto;
   border: 2px solid black;
   border-radius: 20px;
   background-color: #C8D400;
@@ -459,5 +460,29 @@ header{
 }
 .footer-img-div{
   height: 40px;
+}
+.footer-contant-2{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.footer-contant-colums {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contant2-para {
+  width: 200px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+footer{
+  margin: 10px;
+  /* width: 100%; */
+  height: auto;
+}
+.footer-contant-1{
+  justify-content: center;
 }
 }
